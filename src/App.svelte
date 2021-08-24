@@ -1,10 +1,18 @@
 <script lang="ts">
 	export let name: string;
+	export let playbackId: string;
 </script>
 
 <main>
 	<h1>Hello {name}!</h1>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+  <mux-video
+    playback-id="{playbackId}"
+    env-key="mux-data-env-key"
+    metadata-video-title="Big Buck Bunny"
+    metadata-viewer-user-id="user-id-1234"
+    controls
+  ></mux-video>
 </main>
 
 <style>

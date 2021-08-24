@@ -1,9 +1,11 @@
 import App from './App.svelte';
+import '@mux/mux-video';
 
 const app = new App({
 	target: document.body,
 	props: {
-		name: 'world'
+		name: 'world',
+    playbackId: 'DS00Spx1CV902MCtPj5WknGlR102V5HFkDe'
 	}
 });
 
